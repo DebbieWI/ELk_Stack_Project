@@ -61,11 +61,11 @@ The playbook implements the following tasks:
 
  Install docker.io this step installs the docker io
  Install python3-pip 
- the command module and the system module is specified
- download and launch a docker elk container by its name and image and the published ports
+ The command module and the system module is specified
+ Download and launch a docker elk container by its name and image and the published ports
  Enable service docker on boot-      
 
-- ...
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -75,7 +75,8 @@ ELk_Stack_Project/Images/filepath.PNG
 This ELK server is configured to monitor the following machines: 10.0.0.5 10.0.0.6
 
 
-We have installed the following Beats on these machines: filebeat which can collect audit logs.
+We have installed the filebeats on these machines: 
+Filebeat which can collect audit logs. It monitors the log files or location that you specify, and forward them either to Elasticsearch or Logstash for indexing.
 
 
 These Beats allow us to collect the following information from the machine; audit log which has records providing information about who has accessed the system and what operations were performed during a given period of time.
